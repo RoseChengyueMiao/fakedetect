@@ -1,7 +1,7 @@
 # fakedetect
 #fake news detection application based on web single pattern
 
-
+model weights is not included
 
 - Python 3.8 以上
 - Docker
@@ -9,7 +9,7 @@
 
 
 ```sh
-# ヘルスチェック
+
 $ curl localhost:8000/health
 # 出力
 # {
@@ -18,14 +18,14 @@ $ curl localhost:8000/health
 
 
 
-# ラベル一覧
+
 $ curl localhost:8000/label
 
 
 
 
 
-# 推論リクエスト
+
 $ curl \
     -X POST \
     -H "Content-Type: application/json" \
@@ -38,7 +38,7 @@ $ curl \
 # }
 ```
 
-4. Docker コンテナを停止
+#Docker コンテナを停止
 
 ```sh
 $ make stop
